@@ -1,0 +1,163 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: white;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 15px;
+
+}
+
+.nav_principal {
+    background-color: white;
+    border: 1px rgb(184, 184, 184) solid;
+    text-align: right;
+    border-radius: 10px;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+.nav_principal a {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 0px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.nav_principal a:hover {
+    background-color: rgb(11, 16, 59);
+    color: white;
+}
+
+.header {
+    font-weight: bold;
+}
+
+.header h1 {
+    color: white;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    font-size: 45px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+    display: flex;
+    gap: 25px;
+}
+
+.nav_lateral {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
+
+.nav_lateral nav {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.nav_lateral section {
+    position: sticky;
+    top: 0;
+}
+
+.nav_lateral nav a {
+    text-decoration: none;
+    border: 1px rgb(0, 184, 184) solid;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(13, 103, 130);
+    color: white;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.nav_lateral nav a:hover {
+    background-color: rgb(69, 172, 219);
+}
+
+.nav_lateral li {
+    margin: 5px;
+}
+
+.articulos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 15px;
+    text-align: justify;
+}
+
+.articulo {
+    font-size: 22px;
+
+}
+
+.articulo h3 {
+    padding-top: 15px;
+    font-size: 40px;
+    color: rgb(0, 26, 49);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+
+}
+
+.footer small,
+h6 {
+    color: white;
+
+}
+
+@media screen and (max-width:600px) {
+    .nav_lateral section {
+        position: static;
+    }
+
+    .articulos {
+        padding: 0px;
+        margin: 0px;
+        text-align: left;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .nav_lateral {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+
+    }
+}
