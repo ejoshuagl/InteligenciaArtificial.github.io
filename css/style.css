@@ -160,4 +160,22 @@ h6 {
         margin: 0px;
 
     }
+    
+    .nav_principal {
+        padding: 0px;
+    }
+    
+    body{
+        margin: 5px;
+    }
+    
+    .articulo {
+        font-size: 17px;
+    }
+    
+    .articulo h3 {
+        padding-top: 15px;
+        font-size: 30px;
+        color: rgb(0, 26, 49);
+    }
 }
